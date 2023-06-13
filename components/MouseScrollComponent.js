@@ -3,7 +3,7 @@ import lottie from "lottie-web";
 import mouseScroll from "../public/mouse-scroll.json";
 
 
-export default function MouseScrollComponent({profileRef}) {
+export default function MouseScrollComponent({ profileRef }) {
     React.useEffect(() => {
         lottie.loadAnimation({
             container: document.querySelector("#mouseScroll"),
@@ -14,8 +14,12 @@ export default function MouseScrollComponent({profileRef}) {
         profileRef.current.scrollIntoView({ behavior: 'smooth' });
     }
     return (
-        <div className="mouseScroll" onClick={handleClick}>
-            <div id="mouseScroll" style={{ width: 100, height: 100 }}></div>
-        </div>
+        <>
+            <p style={{display:"flex", textAlign:"center", justifyContent:"center"}}> Get to know me.</p>
+            <div className="mouseScroll" onClick={handleClick} >
+
+                <div id="mouseScroll" style={{ width: 100, height: 100 }}></div>
+            </div>
+        </>
     )
 }
