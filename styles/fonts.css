@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'P22 Bifur C';
+    src: url('../public/fonts/P22 Bifur C Regular.ttf') format('truetype');
+    /* Add additional src lines for other font file formats if available */
+    /* Example: src: url('/fonts/your-font-file.woff') format('woff'); */
+    /* Example: src: url('/fonts/your-font-file.woff2') format('woff2'); */
+    /* Make sure to replace 'your-font-file' with the actual font file name */
+    /* Adjust the path according to your directory structure if necessary */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {font-family: "Futura Round W01 Medium";
+    /* src: url("1857223a2a1ea179833304a565493e0d.eot"); IE9 */
+    /* src: url("1857223a2a1ea179833304a565493e0d.eot?#iefix") format("embedded-opentype"), IE6-IE8 */
+    /* url("1857223a2a1ea179833304a565493e0d.woff2") format("woff2"), chrome、firefox */
+    /* url("1857223a2a1ea179833304a565493e0d.woff") format("woff"), chrome、firefox */
+    src: url("../public/fonts/Futura Round W01 Medium.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    /* url("1857223a2a1ea179833304a565493e0d.svg#Futura Round W01 Medium") format("svg"); iOS 4.1- */
+  }

@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +12,34 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.section {
+  height: 100vh;
+}
+
+
+.heading {
+  font-family: 'P22 Bifur C', sans-serif;
+  text-transform: uppercase;
+  font-size: 10rem;
+}
+
+.subHeading {
+  font-family: "Futura Round W01 Medium";
+  text-transform: uppercase;
+  font-size: 3rem;
+  letter-spacing: .1rem;
+  color: #797979;
 }
