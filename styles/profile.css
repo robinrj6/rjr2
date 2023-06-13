@@ -2,3 +2,17 @@
     background-color: white;
     color: black;
 }
+
+.textCover {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 0px 5rem;
+
+}
+.imageMe{
+    padding: 0 3rem;
+    border-radius: 50%;
+}

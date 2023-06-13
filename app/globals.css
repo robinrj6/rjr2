@@ -44,3 +44,8 @@ body {
   letter-spacing: .1rem;
   color: #797979;
 }
+
+.text{
+  font-size: 2rem;
+  letter-spacing: normal;
+}
