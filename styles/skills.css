@@ -2,3 +2,32 @@
     background-color: black;
     color: white;
 }
+
+.centeredText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    /* Styles specific to smaller screens */
+    .centeredText {
+        font-size: small;
+        width: 400px;
+        height: auto;
+        padding-top: 5rem;
+    }
+    .skills{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 2000px) {
+    /* Styles specific to larger screens */
+    .centeredText {
+        font-size: xx-large;
+    }
+}

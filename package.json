@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@frank-mayer/react-tag-cloud": "^1.2.1",
     "autoprefixer": "10.4.14",
     "gsap": "^3.12.1",
     "lottie-web": "^5.12.1",
