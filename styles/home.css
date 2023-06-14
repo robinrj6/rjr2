@@ -11,6 +11,30 @@
     align-items: center;
 }
 
-#mouseScroll:hover{
+#mouseScroll {
+    width: 100px;
+    height: 100px;
+}
+
+#mouseScroll:hover {
     cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Styles specific to smaller screens */
+    #mouseScroll {
+        height: 50px;
+        width: auto;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    /* Styles specific to larger screens */
+    #mouseScroll {
+        height: 150px;
+        width: auto;
+    }
 }

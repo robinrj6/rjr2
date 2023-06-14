@@ -15,10 +15,9 @@ export default function MouseScrollComponent({ profileRef }) {
     }
     return (
         <>
-            <p style={{display:"flex", textAlign:"center", justifyContent:"center"}}> Get to know me.</p>
+            <p style={{ display: "flex", textAlign: "center", justifyContent: "center" }}> Get to know me.</p>
             <div className="mouseScroll" onClick={handleClick} >
-
-                <div id="mouseScroll" style={{ width: 100, height: 100 }}></div>
+                <div id="mouseScroll"></div>
             </div>
         </>
     )

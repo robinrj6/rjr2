@@ -16,3 +16,35 @@
     padding: 0 3rem;
     border-radius: 50%;
 }
+
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Styles specific to smaller screens */
+    .textCover {
+        padding: 0px 1rem; 
+        display: grid; 
+    }
+    .imageMe{
+        padding: 0 .5rem;
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    /* Styles specific to larger screens */
+    .textCover {
+        padding: 0px 5rem; 
+ 
+    }
+    .imageMe{
+        padding: 0 3rem;
+        width: 500px;
+        height: auto;
+    }
+}
