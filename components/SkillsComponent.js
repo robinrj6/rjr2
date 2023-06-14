@@ -45,41 +45,40 @@ export default function SkillsComponent({ skillsRef }) {
 
     return (
         <div className="skills section" ref={skillsRef}>
-            <div className='centeredText'>
-                <TagCloud
-                    options={(w) => ({
-                        radius: getRadius(w.innerWidth, w.innerHeight),
-                        maxSpeed: "fast",
-                    })}
-                    onClick={(tag, ev) => alert(tag)}
-                    onClickOptions={{ passive: true }}
-                >
-                    {[
-                        "VSCode",
-                        "C/C++",
-                        "React",
-                        "Python",
-                        "Java",
-                        "Springboot",
-                        "NextJs",
-                        "HTML",
-                        "CSS",
-                        "Javascript",
-                        "Three.js",
-                        "Web Development",
-                        "PHP",
-                        "Rest API",
-                        "NodeJs",
-                        "MySQL",
-                        "PostgreSQL",
-                        "OracleDB",
-                        "MongoDB",
-                        "Angular",
-                        "Express",
-                        "Git",
-                    ]}
-                </TagCloud>
-            </div>
+            <TagCloud
+                options={(w) => ({
+                    radius: getRadius(w.innerWidth, w.innerHeight),
+                    maxSpeed: "fast",
+                })}
+                onClick={(tag, ev) => alert(tag)}
+                onClickOptions={{ passive: true }}
+                className='tagCloud'
+            >
+                {[
+                    "VSCode",
+                    "C/C++",
+                    "React",
+                    "Python",
+                    "Java",
+                    "Springboot",
+                    "NextJs",
+                    "HTML",
+                    "CSS",
+                    "Javascript",
+                    "Three.js",
+                    "Web Development",
+                    "PHP",
+                    "Rest API",
+                    "NodeJs",
+                    "MySQL",
+                    "PostgreSQL",
+                    "OracleDB",
+                    "MongoDB",
+                    "Angular",
+                    "Express",
+                    "Git",
+                ]}
+            </TagCloud>
         </div>
     )
 }
