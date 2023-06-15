@@ -1,8 +1,9 @@
-'use client'
+"use client"
 import HomeComponent from "@/components/HomeComponent";
 import ProfileComponent from "@/components/ProfileComponent";
 import SkillsComponent from "@/components/SkillsComponent";
 import WorkExpComponent from "@/components/WorkExpComponent";
+
 import AOS from 'aos';
 import { useEffect, useRef } from "react";
 
