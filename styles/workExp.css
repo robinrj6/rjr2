@@ -53,4 +53,7 @@
             "b b b" 200px
             "c c c" 200px / 1fr 1fr 1fr;
     }
+    .workExp{
+        height: 80vh;
+    }
 }

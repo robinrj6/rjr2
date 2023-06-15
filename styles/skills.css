@@ -19,7 +19,8 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 20%;
+        padding-top: 30%;
+        scale: 1.2;
     }
 
     .skills {
