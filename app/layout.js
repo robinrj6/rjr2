@@ -1,5 +1,11 @@
+"use client"
+import 'aos/dist/aos.css';
 import './globals.css'
 import "../styles/fonts.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import AOS from 'aos';
+import { useEffect } from 'react';
 
 export const metadata = {
   title: 'RjR',
@@ -7,6 +13,12 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+  useEffect (() => {
+    // here you can add your aos options
+    AOS.init({
+      offset: 100,
+    });
+  }, []);
   return (
     <html lang="en">
       <head>

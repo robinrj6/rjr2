@@ -18,7 +18,7 @@ export default function SkillsComponent({ skillsRef }) {
 
     const animateProfile = () => {
         gsap.from(skillsRef.current, { backgroundColor: "white", duration: 1, delay: .2 }),
-            gsap.from(skillsRef.current, { color: "black", duratrion: .5 });
+            gsap.from(skillsRef.current, { color: "black", duratrion: 1 });
     };
 
     useEffect(() => {

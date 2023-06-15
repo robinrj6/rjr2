@@ -1,0 +1,56 @@
+.workExp {
+    background-color: white;
+    color: black;
+}
+
+.box-group {
+    padding: 2.5rem 2rem 0rem 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template:
+        "a a a" 300px
+        "b c c" 100px 
+        "b c c" 200px / 9fr 2fr 1fr;
+    overflow: hidden;
+}
+
+.box {
+    color: white;
+    background-color: black;
+    border-radius: 0;
+    border: 2rem solid black;
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.subText {
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.subText2 {
+    font-size: large;
+    font-weight: 100;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Styles specific to smaller screens */
+    .box-group {
+        grid-template:
+            "a a a" 200px
+            "b b b" 200px
+            "c c c" 200px / 1fr 1fr 1fr;
+    }
+}

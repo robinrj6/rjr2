@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function ProfileComponent({ profileRef }) {
     const animateProfile = () => {
         gsap.from(profileRef.current, { backgroundColor: "black", duration: 1, delay: .2 }),
-            gsap.from(profileRef.current, { color: "white", duratrion: .5 });
+            gsap.from(profileRef.current, { color: "white", duratrion: 1 });
     };
 
     useEffect(() => {
@@ -35,9 +35,7 @@ export default function ProfileComponent({ profileRef }) {
     return (
         <div className="profile section" ref={profileRef}>
             <div className="textCover text">
-                <Image src="/img/Myproject1.jpg"
-                    width={300}
-                    height={300}
+                <img src="/img/Myproject1.jpg"
                     alt="Image"
                     className="imageMe"/>
                 <p className="build">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

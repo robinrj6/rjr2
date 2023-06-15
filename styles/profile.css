@@ -15,9 +15,9 @@
 .imageMe{
     padding: 0 3rem;
     border-radius: 50%;
+    width: 300px;
+    height: auto;
 }
-
-
 
 
 /* Media query for smaller screens */
@@ -31,12 +31,12 @@
         grid-auto-rows: auto;
     }
     .imageMe{
-        padding: 0 .5rem;
+        padding: 2rem .5rem;
         width: 200px;
         height: auto;
     }
     .build{
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
 }
 
