@@ -1,0 +1,9 @@
+.projects {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.card{
+    margin: 5rem 2rem;
+}

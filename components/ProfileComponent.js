@@ -1,7 +1,6 @@
 import "../styles/profile.css";
 import { useEffect } from 'react';
 import gsap from 'gsap';
-import Image from "next/image";
 
 
 export default function ProfileComponent({ profileRef }) {

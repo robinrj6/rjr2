@@ -1,0 +1,128 @@
+{
+    "Coursera": {
+        "course": [
+            {
+                "name": "Meta Front-End Developer Professional Certificate",
+                "subItems": [
+                    {
+                        "name": "Version Control",
+                        "time": "Apr 2023",
+                        "link": ""
+                    },
+                    {
+                        "name": "Programming with JavaScript",
+                        "time": "Mar 2023",
+                        "link": ""
+                    },
+                    {
+                        "name": "Introduction to Front-End Development",
+                        "time": "Feb 2023",
+                        "link": ""
+                    },
+                    {
+                        "name": "React Basics by Meta",
+                        "time": "Dec 2022",
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "name": "Full-Stack Web Development with React Specialization",
+                "subItems": [
+                    {
+                        "name": "Server-side Development with NodeJS, Express and MongoDB",
+                        "time": "Jan 2023",
+                        "link": ""
+                    },
+                    {
+                        "name": "Front-End Web Development with React",
+                        "time": "Jan 2021",
+                        "link": ""
+                    },
+                    {
+                        "name": "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+                        "time": "Nov 2020",
+                        "link": ""
+                    }
+                ]
+            },
+            {
+                "name": "Fundamentals of Red Hat Enterprise Linux",
+                "time": "Aug 2022",
+                "link": ""
+            },
+            {
+                "name": "Build Your First React Website",
+                "time": "Jun 2022",
+                "link": ""
+            },
+            {
+                "name": "Computer Vision Basics",
+                "time": "Dec 2020",
+                "link": ""
+            },
+            {
+                "name": "Introduction to Cybersecurity Tools & Cyber Attacks, IBM",
+                "time": "Sep 2020",
+                "link": ""
+            },
+            {
+                "name": "Machine Learning for All",
+                "time": "May 2020",
+                "link": ""
+            }
+        ]
+    },
+    "AWS": {
+        "course": [
+            {
+                "name": "AWS Cloud Practioner Certification",
+                "time": "Jan 2022",
+                "link": ""
+            }
+        ]
+    },
+    "PluralSight": {
+        "course": [
+            {
+                "name": "Building Your First App with Spring Boot 2 and Angular 5",
+                "time": "Mar 2022",
+                "link": ""
+            },
+            {
+                "name": "Angular: Getting Started",
+                "time": "Feb 2022",
+                "link": ""
+            }
+        ]
+    },
+    "Udemy": {
+        "course": [
+            {
+                "name": "The Complete Java Certification Course",
+                "time": "May 2021",
+                "link": ""
+            },
+            {
+                "name": "Linux Command Line Basics",
+                "time": "May 2021",
+                "link": ""
+            },
+            {
+                "name": "The Complete Oracle SQL Bootcamp",
+                "time": "May 2021",
+                "link": ""
+            },
+            {
+                "name": "Build Responsive Real World Websites with HTML5 and CSS3",
+                "time": "Apr 2021",
+                "link": ""
+            },
+            {
+                "name": "Javascript for Beginners",
+                "time": "Apr 2021",
+                "link": ""
+            }
+        ]
+    }
+}

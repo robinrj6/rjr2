@@ -1,0 +1,37 @@
+.certif {
+    background-color: white;
+    color: black;
+}
+
+
+.certifImg {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid black;
+    padding: 2px;
+    margin: 4rem;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+}
+
+.certifImg img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.Image_group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aws {
+    scale: .8;
+}
+
+.certifImg:hover{
+    cursor: pointer;
+}
