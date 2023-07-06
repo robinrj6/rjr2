@@ -35,3 +35,13 @@
 .certifImg:hover{
     cursor: pointer;
 }
+
+.centeredText{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    margin: 0 2rem;
+    padding-top: 1rem;
+    font-family: "Futura Round W01 Medium";
+    font-size: 1.05rem;
+}

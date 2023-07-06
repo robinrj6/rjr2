@@ -79,10 +79,10 @@ export default function CertificationComponent({ certifRef, OpenRef }) {
 
             {showSection && (
                 <div ref={newSection} className="section-medium">
-                    <p>
+                    <p >
                         {
                             data[selectedCert].course.map(item => (
-                                <ul>
+                                <ul className="centeredText">
                                     <li>{item.name}</li>
                                     <ul>{item.subItems?.map(i => (
                                         <li>{i.name}</li>

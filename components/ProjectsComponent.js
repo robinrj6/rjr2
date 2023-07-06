@@ -1,25 +1,19 @@
 import { useEffect, useState } from "react";
 import "../styles/project.css";
 import { gsap } from "gsap";
-import { Card, CardFooter, CardGroup, CardTitle, Col, Row } from "reactstrap";
-import { Octokit } from "octokit";
-
-
+import { Card, CardFooter, CardTitle, Col, Row, Progress } from "reactstrap";
+import { Octokit } from "octokit";;
 
 export default function ProjectComponent({ projectsRef }) {
 
     var octokit = null;
+    var arrLang = [];
+    var arrPercent = [];
+    var percent = [];
+    var percentSum = 0;
+    var output = [];
     const [project, setProjects] = useState([]);
-
-    function getRadius(innerWidth, innerHeight) {
-        if (innerWidth <= 600) {
-            return Math.min(300, innerWidth, innerHeight) / 2;
-        } else if (innerWidth <= 1200) {
-            return Math.min(500, innerWidth, innerHeight) / 2;
-        } else {
-            return Math.min(800, innerWidth, innerHeight) / 2;
-        }
-    }
+    const repos = ["rjr2", "MyWebsite","Profile-SE","PneumoGAN","Employee_Management_sys","RjR_website","Auto-Brightness-for-laptops"];
 
     async function getRepoInfo(name) {
         let response = await octokit.request('GET /repos/{owner}/{repo}/languages', {
@@ -30,13 +24,18 @@ export default function ProjectComponent({ projectsRef }) {
             }
         }
         )
-        setProjects([...project, {
-            name: name,
-            data:JSON.stringify(response.data)
-            // data: Object.keys(response.data).map(function (_) { return [_, response.data[_]]; })
+        // setProjects([...project, {
+        //     name: name,
+        //     data: Object.keys(response.data).map(function (_) { return [_, response.data[_]]; })
 
-        }])
-        console.log(Object.keys(response.data).map(function (_) { return [_, response.data[_]]; }))
+        // }])
+        setProjects((prevProjects) => [
+            ...prevProjects,
+            {
+                name: name,
+                data: Object.keys(response.data).map((key) => [key, response.data[key]])
+            }
+        ]);
     }
 
     const animateProfile = () => {
@@ -59,33 +58,77 @@ export default function ProjectComponent({ projectsRef }) {
         if (projectsRef.current) {
             projectsObserver.observe(projectsRef.current);
         }
+
+
         octokit = new Octokit({
             auth: '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'
         })
-        getRepoInfo("rjr2");
+
+        repos.forEach(e => {
+            getRepoInfo(e);
+        });
+
         return () => {
             projectsObserver.disconnect();
         };
     }, []);
 
+    function combineBoth(arrLang, percent, output) {
+        for (var i = 0; i < arrLang.length; i++) {
+            output[arrLang[i]] = percent[i];
+        }
+    }
+    
     return (
         <div className="projects section" ref={projectsRef}>
             <Row>
                 {project.map((item) => {
-                    return <Col sm={11} md={6}>
+                    return <Col sm={11} md={5}>
                         <Card>
                             <CardTitle>
                                 {item.name}
                             </CardTitle>
                             <CardFooter>
-                                {
-                                    item.data
-                                    // .map((language) => {
-                                    //     <div>
-                                    //         {language[0]}+" "+{language[1]}
-                                    //     </div>
-                                    // })
-                                }
+                                {(
+                                    item.data.map((k, v) => (arrLang.push(k[0]), arrPercent.push(k[1]))),
+
+                                    arrPercent.forEach(element => {
+                                        percentSum = percentSum + element
+                                    }),
+                                    arrPercent.forEach(e => {
+                                        percent.push((e * 100) / percentSum)
+                                    }),
+
+                                    combineBoth(arrLang, percent, output),
+
+                                    console.log(output),
+
+                                    <Progress multi>
+                                        {
+                                            Object.keys(output).map((key) => {
+                                                let color;
+                                                if (key === "CSS") {
+                                                    color = "primary";
+                                                } else if (key === "JavaScript") {
+                                                    color = "warning";
+                                                } else if(key=="HTML") {
+                                                    color = "danger";
+                                                }else if(key=="Java"){
+                                                    color="secondary"
+                                                }else{
+                                                    color="light"
+                                                }
+                                                return (
+                                                    <Progress bar value={output[key]} color={color}>
+                                                    </Progress>
+                                                )
+                                            })
+                                        }
+                                    </Progress>
+                                )}
+                                {Object.keys(output).map((key) => {
+                                    return (<span className="languages">{key} : {Math.round(output[key])}%</span>)
+                                })}
                             </CardFooter>
                         </Card>
                     </Col>

@@ -7,3 +7,13 @@
 .card{
     margin: 5rem 2rem;
 }
+
+.progress{
+    margin: 0;
+    padding: 0;
+}
+.languages{
+    padding-right: 1rem;
+    font-size: small;
+    font-family: "Futura Round W01 Medium";
+}
