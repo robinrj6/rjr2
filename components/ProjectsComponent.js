@@ -75,21 +75,26 @@ export default function ProjectComponent({ projectsRef }) {
 
     function combineBoth(arrLang, percent, output) {
         for (var i = 0; i < arrLang.length; i++) {
-            output[arrLang[i]] = percent[i];
+          output[arrLang[i]] = percent[i];
         }
-    }
-    
+      }
+      
     return (
         <div className="projects section" ref={projectsRef}>
             <Row>
                 {project.map((item) => {
-                    return <Col sm={11} md={5}>
-                        <Card>
+                    return <Col xs="6">
+                        <Card data-aos="fade-up-left">
                             <CardTitle>
                                 {item.name}
                             </CardTitle>
                             <CardFooter>
                                 {(
+                                    percentSum=0,
+                                    arrLang=[],
+                                    arrPercent=[],
+                                    percent=[],
+                                    output=[],
                                     item.data.map((k, v) => (arrLang.push(k[0]), arrPercent.push(k[1]))),
 
                                     arrPercent.forEach(element => {
@@ -115,6 +120,8 @@ export default function ProjectComponent({ projectsRef }) {
                                                     color = "danger";
                                                 }else if(key=="Java"){
                                                     color="secondary"
+                                                }else if(key=="Python"){
+                                                    color="dark"
                                                 }else{
                                                     color="light"
                                                 }

@@ -7,6 +7,9 @@
     color: white;
 }
 
+.r{
+    color: red;
+}
 .mouseScroll {
     display: flex;
     justify-content: center;

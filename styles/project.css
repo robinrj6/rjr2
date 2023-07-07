@@ -3,9 +3,19 @@
     color: white;
     overflow: hidden;
 }
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card{
-    margin: 5rem 2rem;
+    align-items: center;
+    margin: 2rem 3rem;
+    background-color: rgb(176, 176, 176);
+}
+.card-footer{
+    background-color: rgb(176, 176, 176);
 }
 
 .progress{
