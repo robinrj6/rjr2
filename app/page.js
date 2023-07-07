@@ -1,6 +1,7 @@
 "use client"
 import CertificationComponent from "@/components/CertificationComponents";
 import HomeComponent from "@/components/HomeComponent";
+import MobileNavComponent from "@/components/MobileNavComponent";
 import ProfileComponent from "@/components/ProfileComponent";
 import ProjectComponent from "@/components/ProjectsComponent";
 import SkillsComponent from "@/components/SkillsComponent";
@@ -16,6 +17,7 @@ export default function Home() {
   const projectsRef = useRef(null);
   const certifRef = useRef(null);
   const OpenRef = useRef(null);
+  const homeRef = useRef(null);
   useEffect(() => {
     // here you can add your aos options
     AOS.init({
@@ -25,7 +27,8 @@ export default function Home() {
 
   return (
     <main>
-      <HomeComponent profileRef={profileRef} />
+      <HomeComponent profileRef={profileRef} homeRef={homeRef}/>
+      <MobileNavComponent homeRef={homeRef}/>
       <ProfileComponent profileRef={profileRef} />
       <SkillsComponent skillsRef={skillsRef} />
       <WorkExpComponent workExpRef={workExpRef} />

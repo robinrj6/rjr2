@@ -1,9 +1,9 @@
 import "../styles/home.css";
 import MouseScrollComponent from "./MouseScrollComponent";
 
-export default function HomeComponent({ profileRef }) {
+export default function HomeComponent({ homeRef, profileRef }) {
     return (
-        <div className="home section">
+        <div className="home section" homeRef={homeRef}>
             <h1 className="name heading"><span className="r" >R</span>obin Jose Raju
                 <p className="subHeading">FullStack Developer</p>
             </h1>

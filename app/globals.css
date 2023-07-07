@@ -61,7 +61,6 @@ body {
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
-
   .heading {
     /* Styles specific to smaller screens */
     font-size: 8rem;

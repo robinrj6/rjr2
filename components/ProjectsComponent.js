@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/project.css";
 import { gsap } from "gsap";
-import { Card, CardFooter, CardTitle, Col, Row, Progress } from "reactstrap";
+import { Card, CardFooter, CardTitle, Col, Row, Progress, Placeholder, Button, Badge } from "reactstrap";
 import { Octokit } from "octokit";;
 
 export default function ProjectComponent({ projectsRef }) {
@@ -13,9 +13,9 @@ export default function ProjectComponent({ projectsRef }) {
     var percentSum = 0;
     var output = [];
     const [project, setProjects] = useState([]);
-    const repos = ["rjr2", "MyWebsite","Profile-SE","PneumoGAN","Employee_Management_sys","RjR_website","Auto-Brightness-for-laptops"];
+    const repos = ["rjr2", "MyWebsite", "Profile-SE", "PneumoGAN", "Employee_Management_sys", "RjR_website", "Auto-Brightness-for-laptops"];
 
-    async function getRepoInfo(name) {
+    async function getRepoInfo(name) { //gets details from github for each repo using git token
         let response = await octokit.request('GET /repos/{owner}/{repo}/languages', {
             owner: 'robinrj6',
             repo: name,
@@ -24,11 +24,6 @@ export default function ProjectComponent({ projectsRef }) {
             }
         }
         )
-        // setProjects([...project, {
-        //     name: name,
-        //     data: Object.keys(response.data).map(function (_) { return [_, response.data[_]]; })
-
-        // }])
         setProjects((prevProjects) => [
             ...prevProjects,
             {
@@ -60,11 +55,11 @@ export default function ProjectComponent({ projectsRef }) {
         }
 
 
-        octokit = new Octokit({
+        octokit = new Octokit({ //github 
             auth: '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'
         })
 
-        repos.forEach(e => {
+        repos.forEach(e => { //calls getRepoInfo for each repo
             getRepoInfo(e);
         });
 
@@ -73,12 +68,12 @@ export default function ProjectComponent({ projectsRef }) {
         };
     }, []);
 
-    function combineBoth(arrLang, percent, output) {
+    function combineBoth(arrLang, percent, output) {//combines both languages and percentage values from different array to output array
         for (var i = 0; i < arrLang.length; i++) {
-          output[arrLang[i]] = percent[i];
+            output[arrLang[i]] = percent[i];
         }
-      }
-      
+    }
+
     return (
         <div className="projects section" ref={projectsRef}>
             <Row>
@@ -90,11 +85,11 @@ export default function ProjectComponent({ projectsRef }) {
                             </CardTitle>
                             <CardFooter>
                                 {(
-                                    percentSum=0,
-                                    arrLang=[],
-                                    arrPercent=[],
-                                    percent=[],
-                                    output=[],
+                                    percentSum = 0,
+                                    arrLang = [],
+                                    arrPercent = [],
+                                    percent = [],
+                                    output = [],
                                     item.data.map((k, v) => (arrLang.push(k[0]), arrPercent.push(k[1]))),
 
                                     arrPercent.forEach(element => {
@@ -116,14 +111,14 @@ export default function ProjectComponent({ projectsRef }) {
                                                     color = "primary";
                                                 } else if (key === "JavaScript") {
                                                     color = "warning";
-                                                } else if(key=="HTML") {
+                                                } else if (key == "HTML") {
                                                     color = "danger";
-                                                }else if(key=="Java"){
-                                                    color="secondary"
-                                                }else if(key=="Python"){
-                                                    color="dark"
-                                                }else{
-                                                    color="light"
+                                                } else if (key == "Java") {
+                                                    color = "secondary"
+                                                } else if (key == "Python") {
+                                                    color = "dark"
+                                                } else {
+                                                    color = "light"
                                                 }
                                                 return (
                                                     <Progress bar value={output[key]} color={color}>
@@ -134,7 +129,26 @@ export default function ProjectComponent({ projectsRef }) {
                                     </Progress>
                                 )}
                                 {Object.keys(output).map((key) => {
-                                    return (<span className="languages">{key} : {Math.round(output[key])}%</span>)
+                                    let color;
+                                    if (key === "CSS") {
+                                        color = "primary";
+                                    } else if (key === "JavaScript") {
+                                        color = "warning";
+                                    } else if (key == "HTML") {
+                                        color = "danger";
+                                    } else if (key == "Java") {
+                                        color = "secondary"
+                                    } else if (key == "Python") {
+                                        color = "dark"
+                                    } else {
+                                        color = "light"
+                                    }
+                                    return (<span className="languages"><Badge
+                                    color={color}
+                                    pill
+                                  >
+                                    {' '}
+                                  </Badge>{key} : {Math.round(output[key])}%</span>)
                                 })}
                             </CardFooter>
                         </Card>

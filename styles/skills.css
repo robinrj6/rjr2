@@ -2,6 +2,7 @@
     background-color: black;
     color: white;
     font-family: "Futura Round W01 Medium";
+    overflow-x: hidden;
 }
 
 .tagCloud {
@@ -17,15 +18,13 @@
     /* Styles specific to smaller screens */
     .tagCloud {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         padding-top: 30%;
-        scale: 1.2;
+        scale: 1.3;
     }
 
     .skills {
         height: 70vh;
+        width: 100vw;
     }
 }
 

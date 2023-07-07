@@ -3,27 +3,62 @@
     color: white;
     overflow: hidden;
 }
-.col{
+
+.col {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card{
+.card {
     align-items: center;
     margin: 2rem 3rem;
     background-color: rgb(176, 176, 176);
 }
-.card-footer{
+
+.card-footer {
     background-color: rgb(176, 176, 176);
 }
 
-.progress{
+.progress {
     margin: 0;
     padding: 0;
 }
-.languages{
+
+.languages {
     padding-right: 1rem;
     font-size: small;
     font-family: "Futura Round W01 Medium";
+}
+
+.badge {
+    display: inline-block;
+    padding: .3rem;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    margin-right: .2rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Styles specific to smaller screens */
+    .col-6 {
+        width: 100%;
+    }
+
+    .projects {
+        height: auto;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    /* Styles specific to larger screens */
+
 }

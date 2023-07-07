@@ -29,6 +29,7 @@
 @media (max-width: 768px) {
 
     /* Styles specific to smaller screens */
+    
     #mouseScroll {
         height: 50px;
         width: auto;

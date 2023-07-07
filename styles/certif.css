@@ -1,6 +1,7 @@
 .certif {
     background-color: white;
     color: black;
+    height: auto;
 }
 
 
@@ -44,4 +45,23 @@
     padding-top: 1rem;
     font-family: "Futura Round W01 Medium";
     font-size: 1.05rem;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    /* Styles specific to smaller screens */
+    .certifImg{
+        height: 100px;
+        width: 100px;
+        margin: .5rem;
+    }
+
+}
+
+@media (min-width: 2000px) {
+
+    /* Styles specific to larger screens */
+   
 }
