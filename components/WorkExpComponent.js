@@ -38,7 +38,7 @@ export default function WorkExpComponent({ workExpRef }) {
             <div className="box-group">
                 <div className="box box1" data-aos="zoom-out-right">
                     <span className="textGroup">
-                        <h1 className="subHeading">Capgemini Technologies Pvt. Ltd.</h1>
+                        <h1 className="subHeading"><span className="red">C</span>apgemini Technologies Pvt. Ltd.</h1>
                         <h3 className="subHeading subText">Software Engineer</h3>
                         <h4 className="subHeading subText2">September 2021 - June 2023</h4>
                     </span>

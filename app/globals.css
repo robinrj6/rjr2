@@ -38,6 +38,10 @@ body {
   height: 40vh;
 }
 
+.red {
+  color: red;
+}
+
 .heading {
   font-family: 'P22 Bifur C', sans-serif;
   text-transform: uppercase;

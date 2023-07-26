@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../styles/contact.css";
 import { gsap } from "gsap";
-import { Card, CardHeader, CardTitle } from "reactstrap";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, } from "react-icons/fa";
 
 export default function ContactComponent({ contactRef }) {
     const animateProfile = () => {
@@ -34,7 +34,7 @@ export default function ContactComponent({ contactRef }) {
             <div className="flip">
                 <div className="flip-content">
                     <div className="flip-front">
-                    <h2>Robin Jose Raju</h2>
+                        <h2><span className="red">R</span>obin Jose Raju</h2>
                         <br />
                         <p>
                             Thannivelil(H),<br />
@@ -48,9 +48,13 @@ export default function ContactComponent({ contactRef }) {
                         </p>
                     </div>
                     <div className="flip-back">
-                    <p>Software Engineer</p>
-                        <p>Front-end Developer</p>
-                        <p>Full-Stack Developer</p>
+                        <h2><span className="red">R</span>obin Jose Raju</h2>
+                        <div className="icon">
+                            <span className="item"><FaInstagram className="insta i"/></span>
+                            <span className="item"><FaWhatsapp className="wa i"/></span>
+                            <span className="item"><FaLinkedin className="lin i"/></span>
+                            <span className="item"><FaGithub className="git i"/></span>
+                        </div>
                     </div>
                 </div>
             </div>

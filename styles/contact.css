@@ -1,4 +1,4 @@
-.contact {
+.contact:not(.icon) {
     background-color: black;
     color: white;
     font-family: "Futura Round W01 Medium";
@@ -27,8 +27,8 @@
     transition: transform 0.3s;
 }
 
-.flip-front,
-.flip-back {
+.flip-front:not(.icon),
+.flip-back:not(.icon) {
     padding: 1rem 2rem;
     position: absolute;
     height: 100%;
@@ -36,17 +36,89 @@
     /* line-height: 150px; */
     backface-visibility: hidden;
     color: black;
-    background-color: whitesmoke;
-    border: 6px solid whitesmoke;
-    box-shadow: 0 0 30px -2px whitesmoke;
+    background-color: gainsboro;
+    border: 6px solid gainsboro;
+    box-shadow: 0 0 30px -2px gainsboro;
 }
 
 .flip-back {
     transform: rotateY(180deg);
-    border: 6px solid whitesmoke;
-    box-shadow: 0 0 30px -4px whitesmoke;
+    border: 6px solid gainsboro;
+    box-shadow: 0 0 30px -4px gainsboro;
 }
 
+h2 {
+    font-family: 'P22 Bifur C', sans-serif;
+    text-transform: uppercase;
+}
+
+.icon {
+    position: relative;
+    font-size: 4rem;
+}
+
+.item:hover {
+    color: white;
+
+}
+
+.item {
+    padding: 1rem 1rem;
+}
+
+.insta:hover {
+    box-shadow: 0px 0px 20px #d6249f;
+}
+
+.wa:hover {
+    box-shadow: 0px 0px 20px #25D366;
+}
+.lin:hover {
+    box-shadow: 0px 0px 20px #0A66C2;
+}
+.git:hover {
+    box-shadow: 0px 0px 20px black;
+    background-color: black;
+}
+
+
+.insta {
+    padding: .2rem;
+    background-image: radial-gradient(circle at 30% 107%,
+            #fdf497 0%, #fdf497 5%,
+            #fd5949 45%, #d6249f 60%,
+            #285AEB 90%);
+    border: 0rem solid transparent;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+}
+
+.i {
+    font-size: 5rem;
+}
+
+.wa {
+    padding: .2rem;
+    border: 0rem solid transparent;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+    background-color: 	#25D366;
+}
+
+.lin {
+    padding: .2rem;
+    border: 0rem solid transparent;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+    background-color: 	#0A66C2;
+}
+
+.git {
+    padding: .2rem;
+    border: 0rem solid transparent;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+}
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
