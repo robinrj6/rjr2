@@ -53,7 +53,7 @@ export default function CertificationComponent({ certifRef, OpenRef }) {
         [showSection]);
 
     return (
-        <div className={"certif " + (showSection ? "section" : "section-small")} ref={certifRef}>
+        <div className={"certif " + (showSection ? "section" : "section-medium")} ref={certifRef}>
             <div className="Image_group">
                 <div className="certifImg awsClick" onClick={() => { handleClick("AWS") }}>
                     <img src="/img/AWS-Logo.png"
