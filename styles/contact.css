@@ -2,14 +2,14 @@
     background-color: black;
     color: white;
     font-family: "Futura Round W01 Medium";
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .flip {
-    width: 50%;
+    width: 45%;
     height: 50%;
     /* text-align: center; */
     perspective: 600px;
@@ -20,6 +20,7 @@
     height: 100%;
     transition: transform 0.4s;
     transform-style: preserve-3d;
+    text-align: center;
 }
 
 .flip:hover .flip-content {
@@ -38,7 +39,8 @@
     color: black;
     background-color: gainsboro;
     border: 6px solid gainsboro;
-    box-shadow: 0 0 30px -2px gainsboro;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px 0px gainsboro;
 }
 
 .flip-back {
