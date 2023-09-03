@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import "../styles/contact.css";
 import { gsap } from "gsap";
-import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp, } from "react-icons/fa";
+import { FaEnvelope, FaEnvelopeSquare, FaGithub, FaInstagram, FaLinkedin, FaMailchimp, FaPhone, FaPhoneAlt, FaPhoneSlash, FaPhoneSquare, FaPhoneSquareAlt, FaWhatsapp, } from "react-icons/fa";
 
 export default function ContactComponent({ contactRef }) {
     const animateProfile = () => {
@@ -50,10 +50,12 @@ export default function ContactComponent({ contactRef }) {
                     <div className="flip-back">
                         <h2><span className="red">R</span>obin Jose Raju</h2>
                         <div className="icon">
-                            <span className="item"><FaInstagram className="insta i"/></span>
-                            <span className="item"><FaWhatsapp className="wa i"/></span>
-                            <span className="item"><FaLinkedin className="lin i"/></span>
-                            <span className="item"><FaGithub className="git i"/></span>
+                            <a href="tel:919526628112"><span className="item"><FaPhoneAlt className="phone i" /></span></a>
+                            <a href="mailto:robinrjr10@gmail.com"><span className="item"><FaEnvelope className="mail i" /></span></a>
+                            <a href="https://www.instagram.com/_rjr10_/"><span className="item"><FaInstagram className="insta i" /></span></a>
+                            <a href="https://api.whatsapp.com/send?phone=919526628112"><span className="item"><FaWhatsapp className="wa i" /></span></a>
+                            <a href="https://www.linkedin.com/in/robin-jose-raju-1522b01a2/"><span className="item"><FaLinkedin className="lin i" /></span></a>
+                            <a href="https://github.com/robinrj6"><span className="item"><FaGithub className="git i" /></span></a>
                         </div>
                     </div>
                 </div>

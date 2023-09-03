@@ -58,6 +58,9 @@ h2 {
     position: relative;
     font-size: 4rem;
 }
+.icon>a{
+    color: white;
+}
 
 .item:hover {
     color: white;
@@ -66,23 +69,42 @@ h2 {
 
 .item {
     padding: 1rem 1rem;
+
 }
 
 .insta:hover {
     box-shadow: 0px 0px 20px #d6249f;
     scale: 1.2;
+    color: white;
+
+}
+
+.phone:hover {
+    box-shadow: 0px 0px 20px #25D366;
+    scale: 1.2;
+    color: #03ad42;
+
+}
+
+.mail:hover {
+    box-shadow: 0px 0px 20px #fd5949;
+    scale: 1.2;
+    color: #fd5949;
 
 }
 
 .wa:hover {
     box-shadow: 0px 0px 20px #25D366;
     scale: 1.2;
+    color: white;
+
 
 }
 
 .lin:hover {
     box-shadow: 0px 0px 20px #0A66C2;
     scale: 1.2;
+    color: white;
 
 }
 
@@ -90,9 +112,27 @@ h2 {
     box-shadow: 0px 0px 20px black;
     background-color: black;
     scale: 1.2;
+    color: white;
 
 }
 
+.phone {
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+    color: rgb(0, 159, 0);
+    scale: 1;
+}
+
+.mail {
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 25%;
+    transition: all .1s ease-in-out;
+    color: #fd5949;
+    scale: 1;
+}
 
 .insta {
     padding: .2rem;
@@ -104,6 +144,7 @@ h2 {
     border-radius: 25%;
     transition: all .1s ease-in-out;
     scale: 1;
+    color: black;
 
 }
 
@@ -118,6 +159,7 @@ h2 {
     transition: all .1s ease-in-out;
     background-color: #25D366;
     scale: 1;
+    color: black;
 }
 
 .lin {
@@ -127,6 +169,7 @@ h2 {
     transition: all .1s ease-in-out;
     background-color: #0A66C2;
     scale: 1;
+    color: black;
 
 }
 
@@ -136,6 +179,7 @@ h2 {
     border-radius: 25%;
     transition: all .1s ease-in-out;
     scale: 1;
+    color: black;
 
 }
 
@@ -143,27 +187,28 @@ h2 {
 @media (max-width: 768px) {
 
     /* Styles specific to smaller screens */
-    
+
     .flip {
         width: 80%;
         height: 50%;
         /* text-align: center; */
         perspective: 600px;
     }
-    
+
     .flip-content {
         width: 100%;
         height: 100%;
         transition: transform 0.4s;
         transform-style: preserve-3d;
     }
+
     h2 {
         font-family: 'P22 Bifur C', sans-serif;
         text-transform: uppercase;
         font-size: 2.5rem;
     }
 
-    
+
 }
 
 @media (min-width: 2000px) {
