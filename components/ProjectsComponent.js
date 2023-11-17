@@ -56,7 +56,7 @@ export default function ProjectComponent({ projectsRef }) {
 
 
         octokit = new Octokit({ //github 
-            auth: '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'
+            auth: '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'
         })
 
         repos.forEach(e => { //calls getRepoInfo for each repo
