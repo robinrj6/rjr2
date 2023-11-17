@@ -41,14 +41,14 @@ export default function ContactComponent({ contactRef }) {
                             Erlangen 91054,<br />
                             Germany<br/>
                             <br />
-                            Mob. No.: +49 015212619415<br />
+                            Mob. No.: +49 1635241542<br />
                             Email: robinrjr10germany@gmail.com <br />
                         </p>
                     </div>
                     <div className="flip-back">
                         <h2><span className="red">R</span>obin Jose Raju</h2>
                         <div className="icon">
-                            <a href="tel:4915212619415"><span className="item"><FaPhoneAlt className="phone i" /></span></a>
+                            <a href="tel:491635241542"><span className="item"><FaPhoneAlt className="phone i" /></span></a>
                             <a href="mailto:robinrjr10germany@gmail.com"><span className="item"><FaEnvelope className="mail i" /></span></a>
                             <a href="https://www.instagram.com/_rjr10_/"><span className="item"><FaInstagram className="insta i" /></span></a>
                             <a href="https://api.whatsapp.com/send?phone=919526628112"><span className="item"><FaWhatsapp className="wa i" /></span></a>
