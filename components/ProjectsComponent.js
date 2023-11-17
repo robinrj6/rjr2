@@ -13,7 +13,7 @@ export default function ProjectComponent({ projectsRef }) {
     var percentSum = 0;
     var output = [];
     const [project, setProjects] = useState([]);
-    const repos = ["rjr2", "MyWebsite", "Profile-SE", "PneumoGAN", "Employee_Management_sys", "RjR_website", "Auto-Brightness-for-laptops"];
+    const repos = ["rjr2---Portfolio", "MyWebsite-MPA---Portfolio", "Profile-SE---Portfolio", "PneumoGAN", "Employee_Management_sys", "RjR_website", "Auto-Brightness-for-laptops"];
 
     async function getRepoInfo(name) { //gets details from github for each repo using git token
         let response = await octokit.request('GET /repos/{owner}/{repo}/languages', {
@@ -56,7 +56,7 @@ export default function ProjectComponent({ projectsRef }) {
 
 
         octokit = new Octokit({ //github 
-            auth: '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'
+            auth: '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'
         })
 
         repos.forEach(e => { //calls getRepoInfo for each repo
