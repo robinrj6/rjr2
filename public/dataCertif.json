@@ -5,6 +5,11 @@
                 "name": "Meta Front-End Developer Professional Certificate",
                 "subItems": [
                     {
+                        "name": "React Basics by Meta",
+                        "time": "Dec 2022",
+                        "link": ""
+                    },
+                    {
                         "name": "Version Control",
                         "time": "Apr 2023",
                         "link": ""
@@ -20,8 +25,8 @@
                         "link": ""
                     },
                     {
-                        "name": "React Basics by Meta",
-                        "time": "Dec 2022",
+                        "name": "HTML & CSS",
+                        "time": "Nov 2023",
                         "link": ""
                     }
                 ]
