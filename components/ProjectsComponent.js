@@ -16,19 +16,15 @@ export default function ProjectComponent({ projectsRef }) {
     const repos = ["rjr2---Portfolio", "MyWebsite-MPA---Portfolio", "Profile-SE---Portfolio", "PneumoGAN", "Employee_Management_sys", "RjR_website", "Auto-Brightness-for-laptops"];
 
     async function getRepoInfo(name) { //gets details from github for each repo using git token
-        let response = await octokit.request('GET /repos/{owner}/{repo}/languages', {
-            owner: 'robinrj6',
-            repo: name,
-            headers: {
-                'X-GitHub-Api-Version': '2022-11-28'
-            }
-        }
-        )
+  
+        let response = await fetch(`/api/github?repo=${name}`);
+        let data = await response.json();
+
         setProjects((prevProjects) => [
             ...prevProjects,
             {
                 name: name,
-                data: Object.keys(response.data).map((key) => [key, response.data[key]])
+                data: Object.keys(data).map((key) => [key, data[key]])
             }
         ]);
     }
@@ -54,10 +50,6 @@ export default function ProjectComponent({ projectsRef }) {
             projectsObserver.observe(projectsRef.current);
         }
 
-
-        octokit = new Octokit({ //github 
-            auth: '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'
-        })
 
         repos.forEach(e => { //calls getRepoInfo for each repo
             getRepoInfo(e);
@@ -144,11 +136,11 @@ export default function ProjectComponent({ projectsRef }) {
                                         color = "light"
                                     }
                                     return (<span className="languages"><Badge
-                                    color={color}
-                                    pill
-                                  >
-                                    {' '}
-                                  </Badge>{key} : {Math.round(output[key])}%</span>)
+                                        color={color}
+                                        pill
+                                    >
+                                        {' '}
+                                    </Badge>{key} : {Math.round(output[key])}%</span>)
                                 })}
                             </CardFooter>
                         </Card>
