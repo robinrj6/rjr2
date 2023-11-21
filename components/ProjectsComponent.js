@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../styles/project.css";
 import { gsap } from "gsap";
 import { Card, CardFooter, CardTitle, Col, Row, Progress, Placeholder, Button, Badge } from "reactstrap";
-import { Octokit } from "octokit";;
+import { Octokit } from "octokit";
 
 export default function ProjectComponent({ projectsRef }) {
 
