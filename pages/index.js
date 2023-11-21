@@ -1,12 +1,12 @@
 "use client"
-import CertificationComponent from "@/components/CertificationComponents";
-import ContactComponent from "@/components/ContactComponent";
-import HomeComponent from "@/components/HomeComponent";
-import MobileNavComponent from "@/components/MobileNavComponent";
-import ProfileComponent from "@/components/ProfileComponent";
-import ProjectComponent from "@/components/ProjectsComponent";
-import SkillsComponent from "@/components/SkillsComponent";
-import WorkExpComponent from "@/components/WorkExpComponent";
+import CertificationComponent from "../components/CertificationComponents";
+import ContactComponent from "../components/ContactComponent";
+import HomeComponent from "../components/HomeComponent";
+import MobileNavComponent from "../components/MobileNavComponent";
+import ProfileComponent from "../components/ProfileComponent";
+import ProjectComponent from "../components/ProjectsComponent";
+import SkillsComponent from "../components/SkillsComponent";
+import WorkExpComponent from "../components/WorkExpComponent";
 
 import AOS from 'aos';
 import { useEffect, useRef } from "react";
@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <main>
-      <HomeComponent profileRef={profileRef} homeRef={homeRef}/>
+      <HomeComponent profileRef={profileRef} homeref={homeRef}/>
       <MobileNavComponent homeRef={homeRef}/>
       <ProfileComponent profileRef={profileRef} />
       <SkillsComponent skillsRef={skillsRef} />
