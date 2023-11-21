@@ -8,9 +8,7 @@ export default async (req, res) => {
     return res.status(400).json({ error: "Missing repo query parameter" });
   }
 
-  const octokit = new Octokit({
-    auth: "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",
-  });
+  const octokit = new Octokit();
 
   try {
     const response = await octokit.request('GET /repos/{owner}/{repo}/languages', {
