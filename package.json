@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@frank-mayer/react-tag-cloud": "^1.2.1",
     "@mui/material": "^5.13.5",
+    "@octokit/rest": "^20.0.2",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.14",
     "bootstrap": "^5.3.0",
