@@ -31,7 +31,8 @@ body {
 }
 
 .section-medium {
-  height: 80vh;
+  height: auto;
+
 }
 
 .section-small {

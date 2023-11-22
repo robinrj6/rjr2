@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../styles/project.css";
+
 import { gsap } from "gsap";
 import { Card, CardFooter, CardTitle, Col, Row, Progress, Placeholder, Button, Badge } from "reactstrap";
 import { Octokit } from "octokit";
@@ -68,7 +68,7 @@ export default function ProjectComponent({ projectsRef }) {
 
     return (
         <div className="projects section" ref={projectsRef}>
-            <Row>
+            <Row >
                 {project.map((item) => {
                     return <Col xs="6">
                         <Card data-aos="fade-up-left">
@@ -110,7 +110,7 @@ export default function ProjectComponent({ projectsRef }) {
                                                 } else if (key == "Python") {
                                                     color = "dark"
                                                 } else {
-                                                    color = "light"
+                                                    color = "info"
                                                 }
                                                 return (
                                                     <Progress bar value={output[key]} color={color}>
@@ -133,7 +133,7 @@ export default function ProjectComponent({ projectsRef }) {
                                     } else if (key == "Python") {
                                         color = "dark"
                                     } else {
-                                        color = "light"
+                                        color = "info"
                                     }
                                     return (<span className="languages"><Badge
                                         color={color}

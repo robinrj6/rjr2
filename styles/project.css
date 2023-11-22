@@ -2,8 +2,15 @@
     background-color: black;
     color: white;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .col {
     display: flex;
     justify-content: center;
@@ -13,11 +20,11 @@
 .card {
     align-items: center;
     margin: 2rem 3rem;
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(255, 255, 255);
 }
 
 .card-footer {
-    background-color: rgb(176, 176, 176);
+    background-color: rgb(255, 255, 255);
 }
 
 .progress {

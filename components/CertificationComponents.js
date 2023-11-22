@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
-import "../styles/certif.css";
+
 import data from "../public/dataCertif.json";
 
 
@@ -24,6 +24,9 @@ export default function CertificationComponent({ certifRef, OpenRef }) {
                     if (entry.isIntersecting) {
                         animatecertifExp();
                     }
+                    else {
+                        setShowSection(false);
+                    }
                 });
             },
             { threshold: 0.001 } // Adjust the threshold as needed
@@ -46,9 +49,10 @@ export default function CertificationComponent({ certifRef, OpenRef }) {
 
     }
 
-    useEffect(() => {
-        // document.getElementById("newSection")?.focus();
-        newSection.current?.scrollIntoView({ behavior: 'smooth' });
+    useEffect(
+        () => {
+        document.getElementById("newSection")?.focus();
+        // newSection.current?.scrollIntoView({ behavior: 'smooth' });
     },
         [showSection]);
 

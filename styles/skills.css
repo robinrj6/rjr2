@@ -3,6 +3,9 @@
     color: white;
     font-family: "Futura Round W01 Medium";
     overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .tagCloud {
@@ -18,7 +21,7 @@
     /* Styles specific to smaller screens */
     .tagCloud {
         display: flex;
-        padding-top: 30%;
+        /* padding-top: 30%; */
         scale: 1.3;
     }
 

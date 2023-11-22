@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../styles/contact.css";
+
 import { gsap } from "gsap";
 import { FaEnvelope, FaEnvelopeSquare, FaGithub, FaInstagram, FaLinkedin, FaMailchimp, FaPhone, FaPhoneAlt, FaPhoneSlash, FaPhoneSquare, FaPhoneSquareAlt, FaWhatsapp, } from "react-icons/fa";
 

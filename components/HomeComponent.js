@@ -1,4 +1,4 @@
-import "../styles/home.css";
+
 import MouseScrollComponent from "./MouseScrollComponent";
 
 export default function HomeComponent({ homeRef, profileRef }) {

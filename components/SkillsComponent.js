@@ -2,7 +2,7 @@
 import { useEffect, React } from 'react';
 import gsap from 'gsap';
 import TagCloud from '@frank-mayer/react-tag-cloud';
-import "../styles/skills.css";
+
 
 export default function SkillsComponent({ skillsRef }) {
 

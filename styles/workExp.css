@@ -1,6 +1,9 @@
 .workExp {
     background-color: white;
     color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-group {
@@ -9,8 +12,7 @@
     gap: 1rem;
     grid-template:
         "a a a" 300px
-        "b c c" 100px 
-        "b c c" 200px / 9fr 2fr 1fr;
+        "b c c" 100px "b c c" 200px / 9fr 2fr 1fr;
     overflow: hidden;
 }
 
@@ -49,11 +51,17 @@
     /* Styles specific to smaller screens */
     .box-group {
         grid-template:
-            "a a a" 200px
+            "a a a" 250px
             "b b b" 200px
             "c c c" 200px / 1fr 1fr 1fr;
+        gap: 0;
     }
-    .workExp{
-        height: 80vh;
+
+    .workExp {
+        height: 100vh;
+    }
+
+    .box {
+        scale:.75;
     }
 }

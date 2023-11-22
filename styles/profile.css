@@ -11,13 +11,17 @@
     align-items: center;
     text-align: justify;
     padding: 0px 5rem;
-
 }
-.imageMe{
-    padding: 0 3rem;
-    border-radius: 50%;
+
+
+.imageMe {
+    margin: 0 3rem;
     width: 300px;
     height: auto;
+    /* scale: 1; */
+    border: 3px solid #ff0c00;
+    border-radius: 67% 45% 67% 49%;
+    padding-bottom: .5rem;
 }
 
 
@@ -26,18 +30,21 @@
 
     /* Styles specific to smaller screens */
     .textCover {
-        padding: 0px 1rem; 
-        display: grid; 
+        padding: 0px 1rem;
+        display: grid;
         grid-template-rows: 2fr 5fr;
         grid-auto-rows: auto;
     }
-    .imageMe{
-        padding: 2rem .5rem;
+
+    .imageMe {
         width: 200px;
         height: auto;
+        scale: .8;
     }
-    .build{
-        margin-top: -5rem;
+
+    .build {
+        margin-top: 0rem;
+        font-size: smaller;
     }
 }
 
@@ -45,10 +52,11 @@
 
     /* Styles specific to larger screens */
     .textCover {
-        padding: 0px 5rem; 
- 
+        padding: 0px 5rem;
+
     }
-    .imageMe{
+
+    .imageMe {
         padding: 0 3rem;
         width: 500px;
         height: auto;

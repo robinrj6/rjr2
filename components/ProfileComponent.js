@@ -1,4 +1,4 @@
-import "../styles/profile.css";
+
 import { useEffect } from 'react';
 import gsap from 'gsap';
 
@@ -34,10 +34,13 @@ export default function ProfileComponent({ profileRef }) {
     return (
         <div className="profile section" ref={profileRef}>
             <div className="textCover text">
-                <img src="/img/Myproject1.jpg"
-                    alt="Image"
-                    className="imageMe"/>
-                <p className="build"><span className="red">M</span>y abiding passion for technology has driven my academic path in computer science and engineering. Alongside a solid academic foundation, I've actively participated in significant projects, including COVID-19 monitoring apps and groundbreaking IoT solutions. My deep learning project on Pneumonia Detection resulted in a published IEEE paper. Proficient in full-stack development, I am enthusiastic about applying my expertise in emerging technologies to contribute to innovative projects.</p>
+                <div className="svg" >
+                    <img src="/img/Myproject2.png"
+                        alt="Image"
+                        className="imageMe" />
+                </div>
+                <p className="build">
+                    <span className="red">M</span>y abiding passion for technology has driven my academic path in computer science and engineering. Alongside a solid academic foundation, I've actively participated in significant projects, including COVID-19 monitoring apps and groundbreaking IoT solutions. My deep learning project on Pneumonia Detection resulted in a published IEEE paper. Proficient in full-stack development, I am enthusiastic about applying my expertise in emerging technologies to contribute to innovative projects.</p>
             </div>
         </div>
     )

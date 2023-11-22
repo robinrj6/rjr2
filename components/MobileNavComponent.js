@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
-import '../styles/topButton.css';
+
 
 export default function MobileNavComponent({ homeRef }) {
   const [showButton, setShowButton] = useState(false);

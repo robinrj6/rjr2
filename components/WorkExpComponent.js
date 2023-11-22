@@ -1,4 +1,4 @@
-import "../styles/workExp.css";
+
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { Card, CardBody, CardGroup } from "reactstrap";
