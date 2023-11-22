@@ -10,7 +10,7 @@ export default async (req, res) => {
 
   const octokit = new Octokit(
     {
-      auth: "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",
+      auth: process.env.GITHUB_TOKEN,
     }
   );
 
