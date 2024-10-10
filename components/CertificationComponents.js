@@ -11,7 +11,7 @@ export default function CertificationComponent({ certifRef, OpenRef }) {
     const newSection = useRef(null);
 
     const animatecertifExp = () => {
-        gsap.from(certifRef.current, { backgroundColor: "black", duration: 1, delay: .2 }),
+        gsap.from(certifRef.current, { backgroundColor: "black", duration: 1, delay: -.1 }),
             gsap.from(certifRef.current, { color: "white", duratrion: 1 });
     };
 

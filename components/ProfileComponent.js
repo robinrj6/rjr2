@@ -5,7 +5,7 @@ import gsap from 'gsap';
 
 export default function ProfileComponent({ profileRef }) {
     const animateProfile = () => {
-        gsap.from(profileRef.current, { backgroundColor: "black", duration: 1, delay: .2 }),
+        gsap.from(profileRef.current, { backgroundColor: "black", duration: 1, delay: -.1 }),
             gsap.from(profileRef.current, { color: "white", duratrion: 1 });
     };
 

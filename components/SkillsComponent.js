@@ -17,7 +17,7 @@ export default function SkillsComponent({ skillsRef }) {
     }
 
     const animateProfile = () => {
-        gsap.from(skillsRef.current, { backgroundColor: "white", duration: 1, delay: .2 }),
+        gsap.from(skillsRef.current, { backgroundColor: "white", duration: 1, delay: -.1 }),
             gsap.from(skillsRef.current, { color: "black", duratrion: 1 });
     };
 
@@ -65,7 +65,6 @@ export default function SkillsComponent({ skillsRef }) {
                     "HTML",
                     "CSS",
                     "Javascript",
-                    "Three.js",
                     "Web Development",
                     "PHP",
                     "Rest API",
@@ -77,6 +76,7 @@ export default function SkillsComponent({ skillsRef }) {
                     "Angular",
                     "Express",
                     "Git",
+                    "WebFlow"
                 ]}
             </TagCloud>
         </div>

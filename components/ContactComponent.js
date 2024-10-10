@@ -5,7 +5,7 @@ import { FaEnvelope, FaEnvelopeSquare, FaGithub, FaInstagram, FaLinkedin, FaMail
 
 export default function ContactComponent({ contactRef }) {
     const animateProfile = () => {
-        gsap.from(contactRef.current, { backgroundColor: "white", duration: 1, delay: .2 }),
+        gsap.from(contactRef.current, { backgroundColor: "white", duration: 1, delay: -.1 }),
             gsap.from(contactRef.current, { color: "black", duratrion: 1 });
     };
 

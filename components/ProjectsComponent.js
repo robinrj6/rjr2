@@ -30,7 +30,7 @@ export default function ProjectComponent({ projectsRef }) {
     }
 
     const animateProfile = () => {
-        gsap.from(projectsRef.current, { backgroundColor: "white", duration: 1, delay: .2 }),
+        gsap.from(projectsRef.current, { backgroundColor: "white", duration: 1, delay: -.1 }),
             gsap.from(projectsRef.current, { color: "black", duratrion: 1 });
     };
 
