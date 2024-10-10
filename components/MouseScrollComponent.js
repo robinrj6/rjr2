@@ -1,5 +1,4 @@
 import React from "react";
-import lottie from "lottie-web";
 import mouseScroll from "../public/mouse-scroll.json";
 
 
