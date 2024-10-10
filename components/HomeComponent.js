@@ -9,5 +9,6 @@ export default function HomeComponent({ homeRef, profileRef }) {
             </h1>
             <br></br><MouseScrollComponent profileRef={profileRef} />
         </div>
+        
     )
 }

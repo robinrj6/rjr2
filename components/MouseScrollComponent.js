@@ -5,11 +5,16 @@ import mouseScroll from "../public/mouse-scroll.json";
 
 export default function MouseScrollComponent({ profileRef }) {
     React.useEffect(() => {
-        lottie.loadAnimation({
-            container: document.querySelector("#mouseScroll"),
-            animationData: mouseScroll
-        });
+        if (typeof window !== 'undefined') {
+            import('lottie-web').then(lottie => {
+                lottie.default.loadAnimation({
+                    container: document.querySelector("#mouseScroll"),
+                    animationData: mouseScroll
+                });
+            });
+        }
     }, []);
+
     const handleClick = () => {
         profileRef.current.scrollIntoView({ behavior: 'smooth' });
     }
