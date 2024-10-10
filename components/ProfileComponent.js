@@ -40,7 +40,7 @@ export default function ProfileComponent({ profileRef }) {
                         className="imageMe" />
                 </div>
                 <p className="build">
-                    <span className="red">M</span>y abiding passion for technology has driven my academic path in computer science and engineering. Alongside a solid academic foundation, I've actively participated in significant projects, including COVID-19 monitoring apps and groundbreaking IoT solutions. My deep learning project on Pneumonia Detection resulted in a published IEEE paper. Proficient in full-stack development, I am enthusiastic about applying my expertise in emerging technologies to contribute to innovative projects.</p>
+                    <span className="red">I</span> am a Computer Science Engineering graduate with nearly two years of industry experience at Capgemini India Pvt Ltd, where I sharpened my Fullstack development skills. Currently, I am pursuing a Master’s in Artificial Intelligence, while working as a Werkstudent Frontend Developer at IMG.LY. I am passionate about crafting intuitive and efficient user interfaces that blend creativity with functionality. Explore my projects and get to know how I can bring technical innovation to life!</p>
             </div>
         </div>
     )
